@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alex+Brush&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 45, 44);
+    height: 100vh;
+}
+
+article {
+    background-color: rgb(255, 249, 243);
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#transparent-side {
+    background-image: url("../Images/meeting.jpg");
+    background-position: center;
+    background-size: cover;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-top: 30%;
+    font-size: 1.75rem;
+    font-family: 'Aboreto', 'Courier New', Courier, monospace;
+    background-color: rgba(255, 228, 196, 0.5);
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+#logo h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.glasses {
+    fill: white;
+}
+
+footer, footer a {
+    color: white;
+}
+
+#form-side {
+    flex: 7;
+    background-color: rgb(243, 237, 231);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form div {
+    flex: 1;
+}
+
+#jargon, #dataset, #login {
+
+    padding: 0.5rem 1.5rem;
+}
+
+#jargon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#jargon p {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#jargon p:last-child em {
+    font-weight: lighter;
+}
+
+#dataset {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(161, 141, 113);
+    display: flex;
+    flex-direction: column;
+}
+
+#dataset h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+fieldset { 
+    flex: 1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+fieldset div p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.5rem;
+}
+
+input {
+    border: 1px solid rgb(212, 212, 212);
+    font-size: 0.75rem;
+    border-radius: 5px;
+    width: 250px;
+    padding: 0.25rem;
+}
+
+input:focus {
+    box-shadow: 2px 2px 5px rgb(197, 179, 155);
+    background-color: blanchedalmond;
+    border-color: blue;
+    outline: none;
+}
+
+#pwd:invalid, #confirm:invalid {
+    border-color: red;
+}
+
+#login {
+    font-size: 0.7rem;
+}
+
+#login button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    background-color: burlywood;
+    border-color: transparent;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(161, 141, 113);
+    margin: 1rem 0;
+}
+
+#login p a {
+    color:rgb(192, 156, 119);
+    text-decoration: none;
+}
+
+
+
+
