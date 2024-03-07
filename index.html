@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP Sign-up Form</title>
     <link rel="stylesheet" href="Assets/CSS/index.css">
+    <script src="Assets/JS/form.js" defer></script>
 </head>
 <body>
     <article>
@@ -40,13 +41,14 @@
                             </p>
                             <p>
                                 <label for="phone-number">PHONE NUMBER</label>
-                                <input type="text" id="phone-number" name="user_phone_number" minlength="10" maxlength="10" />
+                                <input type="tel" id="phone-number" name="user_phone_number" />
                             </p>
                         </div>
                         <div>
                             <p>
                                 <label for="pwd">PASSWORD</label>
                                 <input type="password" id="pwd" name="user_password" placeholder="password" required />
+                                <span id="error-msg">*Passwords do not match</span>
                             </p>
                             <p>
                                 <label for="confirm">CONFIRM PASSWORD</label>
